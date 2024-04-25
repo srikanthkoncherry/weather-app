@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Button } from 'react-bootstrap'
-import { AsyncPaginate } from 'react-select-async-paginate'
 
 const Search = ({ handleSearch }) => {
     const [input, setInput] = useState('')
@@ -33,7 +32,6 @@ const Search = ({ handleSearch }) => {
         if (input !== '') {
             searchOptions()
         }
-        console.log("OPTIONS = ", options)
     }, [input])
 
     const handleOnChange = (event) => {
@@ -42,13 +40,18 @@ const Search = ({ handleSearch }) => {
     }
 
     const handleOnClick = () => {
-        handleSearch(city)
+        if (city !== '') {
+            handleSearch(city)
+        } else {
+            handleSearch(input)
+        }
+
         setCity('')
         setOptions([])
         setInput('')
     }
     return (
-        <div>
+        <div className="Search-bar">
             <div className="input-group mb-3">
                 <input
                     placeholder='Enter'
@@ -72,12 +75,18 @@ const Search = ({ handleSearch }) => {
                         <div
                             className="litem"
                             key={option}
-                            onClick={() => {
-                                console.log("SELECTED ", option)
-                                setCity(option)
-                                setInput(option)
-                            }}>
-                            <Button>{option}</Button>
+                        >
+                            <button
+                                type="button"
+                                className="dropdown-item"
+                                data-bs-theme-value="dark"
+                                onClick={() => {
+                                    console.log("SELECTED ", option)
+                                    setCity(option)
+                                    setInput(option)
+                                }}>
+                                {option}
+                            </button>
                         </div>
                     ))}
                 </div>

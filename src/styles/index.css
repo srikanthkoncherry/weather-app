@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('../assets/umb.jpg'); /* Replace 'your-image-url.jpg' with the URL of your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.litem .button:hover {
+  border: 10px;
+  background: "purple";
+}
+
+.bgg{
+  background: rgba(6, 6, 6, 0.395);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.customCard {
+  width: 500px;
+  background-color: rgba(252, 250, 250, 0.407);
+  height: 100%;
+  border-radius: 20px;
+  border: 20px 20px 20px 20px;
+  border-color: black;
+  flex-direction: ;
+}
+
+.place {
+  position: relative;
+  top: 20px;
+  left: 15px;
+  align-items: self-end;
+  display: flex;
+  flex-wrap: wrap;
+  width: 63%;
+}
+
+.temp {
+  left: 15px;
+  position: relative;
+  top: 30px;
+  height: 100px;
+}
+
+.mainTemp {
+  display: flex;
+  align-self: center;
+  height: 100%;
+  width: 200px;
+}
+.sideTemp {
+  position: relative;
+  top: 10px;
+}
+
+.description {
+  position: relative;
+  top: 90px;
+  width: 100%;
+  height: 60px;
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
+  
+  transform-origin: 0 0;
+  transform: rotate(269deg);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  flex-direction: row;
+}
+
+.bottom .feels,
+.bottom .humidity,
+.bottom .wind {
+  background-color: rgba(252, 250, 250, 0.847);
+  padding: 1rem;
+  border-radius: 15px;
+  width: 33%;
+  margin: 10 10 10 10;
+
+}
+
+.options {
+  position: relative;
+  top: 10px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+}
+
+.options .toggle {
+  background-color: rgba(252, 250, 250, 0.847);
+  padding: 1rem;
+  border-radius: 15px;
+  width: 50%;
+}
+.rowww {
+  height: 300px;
+  padding-top: 20px;
+}
