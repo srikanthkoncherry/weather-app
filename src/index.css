@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.litem:hover {
+  border: 10px;
+  background: "purple";
+}
+
+.Search-bar{
+  opacity: 0.5;
+}
+
